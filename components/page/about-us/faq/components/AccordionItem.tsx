@@ -46,14 +46,16 @@ export default function AccordionItem(props: AccordionItemProps) {
 						/>
 					</Grid>
 					<Grid item>
-						<Typography textAlign='left' ml={2}>
+						<Typography variant='h6' textAlign='left' ml={2}>
 							<b>{props.title}</b>
 						</Typography>
 					</Grid>
 				</Grid>
 			</AccordionSummary>
 			<AccordionDetails>
-				<Typography textAlign='left'>{props.children}</Typography>
+				<Typography variant='body2' color='text.secondary' textAlign='left'>
+					{props.children}
+				</Typography>
 			</AccordionDetails>
 		</Accordion>
 	)

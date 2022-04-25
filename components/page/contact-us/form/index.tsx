@@ -1,4 +1,3 @@
-import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
@@ -8,7 +7,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function Form() {
 	return (
-		<Container sx={{ mb: 7, mt: 3 }}>
+		<Box sx={{ my: 4 }}>
 			<Grid container alignItems="center">
 				<Grid item xs={5}>
 					<iframe
@@ -106,13 +105,13 @@ export default function Form() {
 									// border: '1px solid #127F06'
 								}}
 							/>
-							<Button variant='contained' sx={{ color: 'white' }} endIcon={<ArrowForwardIcon/>}>
+							<Button variant='contained' endIcon={<ArrowForwardIcon/>}>
 								Илгээх 
 							</Button>
 						</Grid>
 					</Grid>
 				</Grid>
 			</Grid>
-		</Container>
+		</Box>
 	)
 }

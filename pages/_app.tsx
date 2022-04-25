@@ -1,6 +1,6 @@
 import React from 'react'
 import { CacheProvider } from '@emotion/react'
-import { Box, ThemeProvider, CssBaseline } from '@mui/material'
+import { ThemeProvider, CssBaseline } from '@mui/material'
 
 import createEmotionCache from '../utils/createEmotionCache'
 import lightTheme from '../styles/theme/lightTheme'
@@ -19,9 +19,7 @@ const MyApp = (props: any) => {
 			<ThemeProvider theme={lightTheme}>
 				<CssBaseline />
 				<Menu />
-				<Box sx={{ pt: 12 }}>
-					<Component {...pageProps} />
-				</Box>
+				<Component {...pageProps} />
 				<Footer />
 			</ThemeProvider>
 		</CacheProvider>

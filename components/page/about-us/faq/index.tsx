@@ -18,7 +18,7 @@ export default function FAQ() {
 	}
 
 	return (
-		<Container sx={{ my: 5 }}>
+		<Container sx={{ my: 8 }}>
 			<TabContext value={value}>
 				<TabList onChange={handleChange} aria-label="lab API tabs example" centered>
 					<Tab label="Төсөл хэрэгжүүлэгчид" value='1' />

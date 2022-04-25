@@ -80,7 +80,7 @@ export default function Menu() {
 							{menus.map((item, index) => (
 								<Link key={index} href={item.url}>
 									<a>
-										<MenuButton className={router.pathname === item.url ? 'active' : ''} active>
+										<MenuButton className={router.pathname === item.url ? 'active' : ''}>
 											{item.title}
 										</MenuButton>
 									</a>

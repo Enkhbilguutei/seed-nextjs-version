@@ -1,7 +1,8 @@
+import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
+import Typography from '@mui/material/Typography'
 
 import AddIcon from '@mui/icons-material/Add'
 import PeopleIcon from '@mui/icons-material/People'
@@ -10,7 +11,7 @@ import MoreTimeIcon from '@mui/icons-material/MoreTime'
 
 export default function WhyChooseUs() {
 	return (
-		<div style={{ backgroundColor: '#edf9f3', padding: '40px 0' }}>
+		<Box sx={{ backgroundColor: '#edf9f3', py: 8 }}>
 			<Container sx={{ textAlign: 'center' }}>
 				<Typography
 					variant="h6"
@@ -112,6 +113,6 @@ export default function WhyChooseUs() {
 					</CardContent>
 				</Card>
 			</Container>
-		</div>
+		</Box>
 	)
 }

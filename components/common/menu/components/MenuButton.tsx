@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 export default function (props: any) {
     return (
         <Button {...props} sx={{
-            color: 'primary.contrastText',
+            color: 'text.primary',
             borderBottom: '3px solid white',
             textTransform: 'initial',
             mx: 1,

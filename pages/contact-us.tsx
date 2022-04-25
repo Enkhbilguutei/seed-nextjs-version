@@ -1,5 +1,15 @@
+import Container from '@mui/material/Container'
+
+import PageLayout from 'layout/page-layout'
+
 import Form from 'components/page/contact-us/form'
 
 export default function ContactUsPage() {
-	return <Form />
+	return (
+		<PageLayout>
+			<Container>
+				<Form />
+			</Container>
+		</PageLayout>
+	)
 }

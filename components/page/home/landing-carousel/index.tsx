@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Slider from 'react-slick'
+import Box from '@mui/material/Box'
 
 import Slider1 from 'assets/slider/slider1.jpg'
 import Slider2 from 'assets/slider/slider2.jpg'
@@ -11,21 +12,23 @@ var sliderSettings = {
 	infinite: true,
 	speed: 500,
 	slidesToShow: 1,
-	slidesToScroll: 1
+	slidesToScroll: 1,
 }
 
-export default function Carousel() {
+export default function LandingCarousel() {
 	return (
-		<Slider {...sliderSettings}>
-			<div>
-				<Image src={Slider1} alt="Slider 1"></Image>
-			</div>
-			<div>
-				<Image src={Slider2} alt="Slider 2"></Image>
-			</div>
-			<div>
-				<Image src={Slider3} alt="Slider 3"></Image>
-			</div>
-		</Slider>
+		<Box>
+			<Slider {...sliderSettings}>
+				<div>
+					<Image src={Slider1} alt="Slider 1"></Image>
+				</div>
+				<div>
+					<Image src={Slider2} alt="Slider 2"></Image>
+				</div>
+				<div>
+					<Image src={Slider3} alt="Slider 3"></Image>
+				</div>
+			</Slider>
+		</Box>
 	)
 }

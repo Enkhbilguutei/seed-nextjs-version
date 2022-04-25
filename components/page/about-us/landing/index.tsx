@@ -10,7 +10,7 @@ import AboutGalleryImage2 from 'assets/about/about-gallery-2.jpg'
 
 export default function Landing() {
 	return (
-		<Container sx={{ my: 10 }}>
+		<Container sx={{ my: 8 }}>
 			<Grid container alignItems="center">
 				<Grid item xs={5} sx={{ pr: 3 }}>
 					<Typography

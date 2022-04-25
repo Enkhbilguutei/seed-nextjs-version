@@ -1,13 +1,15 @@
-import SeedLandingCarousel from 'components/page/home/landing-carousel'
-import SeedProjectCarousel from 'components/page/home/project-carousel'
-import SeedLandingAboutUs from 'components/page/home/about-us'
+import PageLayout from 'layout/page-layout';
+
+import LandingCarousel from 'components/page/home/landing-carousel'
+import ProjectCarousel from 'components/page/home/project-carousel'
+import AboutUs from 'components/page/home/about-us'
 
 export default function Home() {
     return (
-        <div>
-            <SeedLandingCarousel />
-			<SeedProjectCarousel />
-            <SeedLandingAboutUs />
-        </div>
+        <PageLayout>
+            <LandingCarousel />
+			<ProjectCarousel />
+            <AboutUs />
+        </PageLayout>
     )
 }

@@ -6,6 +6,7 @@ import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import CardMedia from '@mui/material/CardMedia'
 import CardContent from '@mui/material/CardContent'
+import Chip from '@mui/material/Chip'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 
@@ -42,16 +43,15 @@ export default function ProjectItem(props: IProps) {
 					<Box
 						sx={{
 							position: 'absolute',
-							left: '40px',
+							left: '20px',
 							top: '-40px',
 							transform: 'translateY(-50%)',
-							backgroundColor: '#127f06',
 							px: 2,
 							py: 1,
 							color: 'white'
 						}}
 					>
-						{category ? category : 'Таг '}
+						<Chip label={category ? category : 'Таг '} color='primary' sx={{ px: 1, py: 3, fontSize: '1rem' }} />
 					</Box>
 					<Link href={authorLink ? authorLink : ''}>
 						<a>
