@@ -1,9 +1,10 @@
+import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Input from '@mui/material/Input'
 
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 
 export default function Form() {
 	return (
@@ -105,8 +106,8 @@ export default function Form() {
 									// border: '1px solid #127F06'
 								}}
 							/>
-							<Button variant='contained' endIcon={<ArrowForwardIcon/>}>
-								Илгээх 
+							<Button variant="contained" endIcon={<ArrowForwardIcon />}>
+								Илгээх
 							</Button>
 						</Grid>
 					</Grid>
