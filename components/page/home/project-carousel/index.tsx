@@ -11,7 +11,7 @@ import ProjectGrid6 from 'assets/project/project-grid-06.jpg'
 import ProjectItem from 'components/common/project-item'
 
 var sliderSettings = {
-	arrows: false,
+	arrows: true,
 	dots: false,
 	infinite: true,
 	autoplay: true,
@@ -48,7 +48,6 @@ var sliderSettings = {
 }
 
 export default function ProjectCarousel() {
-	
 	// Backend data fetch
 
 	return (

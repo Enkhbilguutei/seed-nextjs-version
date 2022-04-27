@@ -48,7 +48,7 @@ export default function Footer() {
 								</Typography>
 							</a>
 						</Link>
-						<Link href="/terms-and-conditions">
+						<Link href="/contact-us">
 							<a>
 								<Typography variant="caption" display="block" color="white">
 									Бидэнтэй холбогдох

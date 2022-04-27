@@ -39,7 +39,7 @@ export default function ProjectItem(props: IProps) {
 						backgroundPosition: 'center'
 					}}
 				></CardMedia>
-				<CardContent sx={{ mt: 5, px: 5, position: 'relative' }}>
+				<CardContent sx={{ mt: 5, px: 4, position: 'relative' }}>
 					<Box
 						sx={{
 							position: 'absolute',
@@ -51,7 +51,11 @@ export default function ProjectItem(props: IProps) {
 							color: 'white'
 						}}
 					>
-						<Chip label={category ? category : 'Таг '} color='primary' sx={{ px: 1, py: 3, fontSize: '1rem' }} />
+						<Chip
+							label={category ? category : 'Таг'}
+							color="primary"
+							sx={{ px: 1, py: 3, fontSize: '1rem' }}
+						/>
 					</Box>
 					<Link href={authorLink ? authorLink : ''}>
 						<a>
