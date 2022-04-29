@@ -97,7 +97,6 @@ export default function Menu() {
 							href="/login"
 							color="primary"
 							variant="outlined"
-							disabled
 						>
 							Нэвтрэх
 						</Button>

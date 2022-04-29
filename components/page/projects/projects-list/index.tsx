@@ -21,9 +21,9 @@ export default function ProjectList() {
 						image={ProjectGrid1}
 						alt="Project Grid 1"
 						title="Яаралтай Тусламжийн Тасгийнхан МУОАК"
-						authorLink="http://seed.mn/"
+						authorLink="/project-details"
 						author="EKU"
-						href="http://seed.mn/"
+						href="/project-details"
 					/>
 				</Grid>
 				<Grid item xs={4}>
@@ -31,9 +31,9 @@ export default function ProjectList() {
 						image={ProjectGrid2}
 						alt="Project Grid 1"
 						title="Яаралтай Тусламжийн Тасгийнхан МУОАК"
-						authorLink="http://seed.mn/"
+						authorLink="/project-details"
 						author="EKU"
-						href="http://seed.mn/"
+						href="/project-details"
 					/>
 				</Grid>
 				<Grid item xs={4}>
@@ -41,9 +41,9 @@ export default function ProjectList() {
 						image={ProjectGrid3}
 						alt="Project Grid 1"
 						title="Яаралтай Тусламжийн Тасгийнхан МУОАК"
-						authorLink="http://seed.mn/"
+						authorLink="/project-details"
 						author="EKU"
-						href="http://seed.mn/"
+						href="/project-details"
 					/>
 				</Grid>
 				<Grid item xs={4}>
@@ -51,9 +51,9 @@ export default function ProjectList() {
 						image={ProjectGrid4}
 						alt="Project Grid 1"
 						title="Яаралтай Тусламжийн Тасгийнхан МУОАК"
-						authorLink="http://seed.mn/"
+						authorLink="/project-details"
 						author="EKU"
-						href="http://seed.mn/"
+						href="/project-details"
 					/>
 				</Grid>
 				<Grid item xs={4}>
@@ -61,9 +61,9 @@ export default function ProjectList() {
 						image={ProjectGrid5}
 						alt="Project Grid 1"
 						title="Яаралтай Тусламжийн Тасгийнхан МУОАК"
-						authorLink="http://seed.mn/"
+						authorLink="/project-details"
 						author="EKU"
-						href="http://seed.mn/"
+						href="/project-details"
 					/>
 				</Grid>
 				<Grid item xs={4}>
@@ -71,9 +71,9 @@ export default function ProjectList() {
 						image={ProjectGrid6}
 						alt="Project Grid 1"
 						title="Яаралтай Тусламжийн Тасгийнхан МУОАК"
-						authorLink="http://seed.mn/"
+						authorLink="/project-details"
 						author="EKU"
-						href="http://seed.mn/"
+						href="/project-details"
 					/>
 				</Grid>
 				<Grid item xs={4}>
@@ -81,9 +81,9 @@ export default function ProjectList() {
 						image={ProjectGrid4}
 						alt="Project Grid 1"
 						title="Яаралтай Тусламжийн Тасгийнхан МУОАК"
-						authorLink="http://seed.mn/"
+						authorLink="/project-details"
 						author="EKU"
-						href="http://seed.mn/"
+						href="/project-details"
 					/>
 				</Grid>
 				<Grid item xs={4}>
@@ -91,9 +91,9 @@ export default function ProjectList() {
 						image={ProjectGrid5}
 						alt="Project Grid 1"
 						title="Яаралтай Тусламжийн Тасгийнхан МУОАК"
-						authorLink="http://seed.mn/"
+						authorLink="/project-details"
 						author="EKU"
-						href="http://seed.mn/"
+						href="/project-details"
 					/>
 				</Grid>
 				<Grid item xs={4}>
@@ -101,12 +101,12 @@ export default function ProjectList() {
 						image={ProjectGrid6}
 						alt="Project Grid 1"
 						title="Яаралтай Тусламжийн Тасгийнхан МУОАК"
-						authorLink="http://seed.mn/"
+						authorLink="/project-details"
 						author="EKU"
-						href="http://seed.mn/"
+						href="/project-details"
 					/>
 				</Grid>
-				<Grid item xs={12} textAlign='center'>
+				<Grid item xs={12} textAlign="center">
 					<Button variant="contained" disabled>
 						<ExpandCircleDownIcon sx={{ mr: 1 }} />
 						Нэмж үзэх
