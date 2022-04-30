@@ -9,6 +9,7 @@ import CardContent from '@mui/material/CardContent'
 import LinearProgress, {
 	linearProgressClasses
 } from '@mui/material/LinearProgress'
+import { shadows } from '@mui/system'
 
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
@@ -46,7 +47,14 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 export default function projectDetails() {
 	return (
 		<Grid item xs={12}>
-			<Button variant="contained">Кино</Button>
+			<Button
+				variant="contained"
+				sx={{
+					boxShadow: '0px 10px 30px 0px'
+				}}
+			>
+				Кино
+			</Button>
 			<Typography
 				variant="h4"
 				sx={{ alignItems: 'Left', my: 3, fontWeight: 'bold' }}
@@ -80,7 +88,9 @@ export default function projectDetails() {
 						}}
 					>
 						<CardContent>
-							<Typography variant="h4">20сая₮</Typography>
+							<Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+								20сая₮
+							</Typography>
 							<Typography variant="body2">Дэмжлэг авсан</Typography>
 						</CardContent>
 					</Card>
@@ -96,7 +106,9 @@ export default function projectDetails() {
 						}}
 					>
 						<CardContent>
-							<Typography variant="h4">10</Typography>
+							<Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+								10
+							</Typography>
 							<Typography variant="body2">Дэмжигчид</Typography>
 						</CardContent>
 					</Card>
@@ -113,7 +125,9 @@ export default function projectDetails() {
 						}}
 					>
 						<CardContent>
-							<Typography variant="h4">17</Typography>
+							<Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+								17
+							</Typography>
 							<Typography variant="body2">Өдөр үлдсэн</Typography>
 						</CardContent>
 					</Card>
@@ -125,10 +139,10 @@ export default function projectDetails() {
 			>
 				250сая₮ дэмжлэг авахаас
 			</Typography>
-			<Typography sx={{ fontWeight: 'bold', textAlign: 'right' }}>
-				50%
-			</Typography>
-			<LinearProgress variant="determinate" value={60} sx={{ mt: 5 }} />
+			<Grid textAlign={'right'}>
+				<Typography sx={{ fontWeight: 'bold', pb: '5px' }}>50%</Typography>
+			</Grid>
+			<LinearProgress variant="determinate" value={60} sx={{ mb: 5 }} />
 
 			<Grid container sx={{ my: 5 }} justifyContent="space-between">
 				<Button
@@ -154,6 +168,12 @@ export default function projectDetails() {
 					sx={{ fontWeight: 'bold', borderRadius: 10, width: '15%' }}
 				>
 					250k₮
+				</Button>
+				<Button
+					variant="outlined"
+					sx={{ fontWeight: 'bold', borderRadius: 10, width: '15%' }}
+				>
+					500k₮
 				</Button>
 				<Button
 					variant="outlined"
