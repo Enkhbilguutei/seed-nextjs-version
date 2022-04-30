@@ -15,12 +15,7 @@ export default function projectDetails() {
 					</Grid>
 					<Grid item xs={6}>
 						<FundingInfo />
-					</Grid>
-					<Grid item xs={6}>
 						<Rewards />
-					</Grid>
-					<Grid item xs={12}>
-						<Comments />
 					</Grid>
 				</Grid>
 			</Container>
