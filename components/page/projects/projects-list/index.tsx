@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Button from '@mui/material/Button'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
@@ -38,7 +38,10 @@ export default function ProjectList() {
 					}
 				})}
 				<Grid item xs={12} textAlign="center">
-					<Button variant="contained" onClick={() => changeTotalProjects(totalProjects + 3)}>
+					<Button
+						variant="contained"
+						onClick={() => changeTotalProjects(totalProjects + 3)}
+					>
 						<ExpandCircleDownIcon sx={{ mr: 1 }} />
 						Нэмж үзэх
 					</Button>
