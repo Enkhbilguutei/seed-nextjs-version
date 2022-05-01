@@ -1,20 +1,20 @@
-import React from 'react';
+import React from 'react'
 import PageLayout from 'layout/page-layout'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
 import Image from 'next/image'
 import FundingInfo from 'components/page/project-details/funding-Info'
-import MainDetails from 'components/page/project-details/Main-details'
+import MainDetails from 'components/page/project-details/main-details'
 import Rewards from 'components/page/project-details/rewards'
 
 import ProjectDetailsHeader from 'public/assets/project/project-details.jpg'
 
 export default function projectDetails() {
-	const [height, setHeight] = React.useState<string>('1191px');
+	const [height, setHeight] = React.useState<string>('1191px')
 
 	React.useEffect(() => {
-		let element = document.getElementById('project-details');
-		setHeight(element ? element.clientHeight.toString() + 'px' : '1193px');
+		let element = document.getElementById('project-details')
+		setHeight(element ? element.clientHeight.toString() + 'px' : '1193px')
 	}, [])
 
 	return (

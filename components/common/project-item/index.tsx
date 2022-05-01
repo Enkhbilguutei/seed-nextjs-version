@@ -100,12 +100,16 @@ export default function ProjectItem(props: IProps) {
 						<a>
 							<Typography
 								variant="h6"
-								className="titleTwoLine"
 								sx={{
 									mt: 3,
 									mb: 1,
 									fontWeight: 'bold',
-									fontSize: '15px'
+									fontSize: '15px',
+									overflow: 'hidden',
+									textOverflow: 'ellipsis',
+									display: '-webkit-box',
+									WebkitLineClamp: '1',
+									WebkitBoxOrient: 'vertical'
 								}}
 							>
 								{title ? title : ''}
