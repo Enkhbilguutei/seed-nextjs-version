@@ -1,12 +1,12 @@
 import Slider from 'react-slick'
 import Box from '@mui/material/Box'
 
-import ProjectGrid1 from 'assets/project/project-grid-01.jpg'
-import ProjectGrid2 from 'assets/project/project-grid-02.jpg'
-import ProjectGrid3 from 'assets/project/project-grid-03.jpg'
-import ProjectGrid4 from 'assets/project/project-grid-04.jpg'
-import ProjectGrid5 from 'assets/project/project-grid-05.jpg'
-import ProjectGrid6 from 'assets/project/project-grid-06.jpg'
+import ProjectGrid1 from 'public/assets/project/project-grid-01.jpg'
+import ProjectGrid2 from 'public/assets/project/project-grid-02.jpg'
+import ProjectGrid3 from 'public/assets/project/project-grid-03.jpg'
+import ProjectGrid4 from 'public/assets/project/project-grid-04.jpg'
+import ProjectGrid5 from 'public/assets/project/project-grid-05.jpg'
+import ProjectGrid6 from 'public/assets/project/project-grid-06.jpg'
 
 import ProjectItem from 'components/common/project-item'
 

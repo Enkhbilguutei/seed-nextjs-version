@@ -6,7 +6,7 @@ import AddIcon from '@mui/icons-material/Add'
 import DoneIcon from '@mui/icons-material/Done'
 
 // import AboutGalleryImage1 from 'assets/about/about-gallery-1.jpg'
-import AboutGalleryImage2 from 'assets/about/about-gallery-2.jpg'
+import AboutGalleryImage2 from 'public/assets/about/about-gallery-2.jpg'
 
 export default function Landing() {
 	return (

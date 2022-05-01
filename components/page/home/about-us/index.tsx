@@ -9,8 +9,8 @@ import CardContent from '@mui/material/CardContent'
 
 import DoneIcon from '@mui/icons-material/Done'
 
-import AboutGallery2 from 'assets/about/about-gallery-2.jpg'
-import MunkhtulgaImage from 'assets/author-thumbs/01.jpg'
+import AboutGallery2 from 'public/assets/about/about-gallery-2.jpg'
+import MunkhtulgaImage from 'public/assets/author-thumbs/01.jpg'
 
 export default function AboutUs() {
 	return (
@@ -52,7 +52,10 @@ export default function AboutUs() {
 							</Typography>
 							<Grid container alignItems="center">
 								<Grid item>
-									<Avatar alt="Munkhtulga CEO">O</Avatar>
+									<Avatar
+										alt="Munkhtulga CEO"
+										src="/assets/author-thumbs/02.jpg"
+									/>
 								</Grid>
 								<Grid item sx={{ ml: 3 }}>
 									<Typography variant="h6">О.Мөнхтулга</Typography>

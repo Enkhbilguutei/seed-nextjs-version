@@ -12,7 +12,7 @@ import Button from '@mui/material/Button'
 
 import MenuButton from './components/MenuButton'
 
-import SeedLogoBlack from 'assets/logo/seed_logo_black.svg'
+import SeedLogoBlack from 'public/assets/logo/seed_logo_black.svg'
 
 const menus = [
 	{

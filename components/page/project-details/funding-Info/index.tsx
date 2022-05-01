@@ -1,6 +1,7 @@
 import { Button, Grid, Typography, Box } from '@mui/material'
 import Image from 'next/image'
 import Card from '@mui/material/Card'
+import Chip from '@mui/material/Chip'
 import CardContent from '@mui/material/CardContent'
 import LinearProgress from '@mui/material/LinearProgress'
 
@@ -12,18 +13,22 @@ import Batamgalan from '/assets/author-thumbs/03.jpg'
 export default function projectDetails() {
 	return (
 		<Grid item xs={12}>
-			<Button
-				variant="contained"
-				sx={{
-					boxShadow: '0px 10px 30px 0px'
-				}}
-			>
-				Кино
-			</Button>
 			<Typography
 				variant="h4"
-				sx={{ alignItems: 'Left', my: 3, fontWeight: 'bold' }}
+				sx={{
+					my: 3,
+					fontWeight: 'bold',
+					display: 'block'
+				}}
 			>
+				<Chip
+					label="Кино"
+					color="primary"
+					sx={{
+						fontSize: '0.8rem',
+						mr: 2
+					}}
+				/>
 				Single Ladies IV
 			</Typography>
 			<Box justifyItems="center" alignItems="center" sx={{ display: 'flex' }}>

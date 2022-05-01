@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Slider from 'react-slick'
 import Box from '@mui/material/Box'
 
-import Slider1 from 'assets/slider/slider1.jpg'
-import Slider2 from 'assets/slider/slider2.jpg'
-import Slider3 from 'assets/slider/slider3.jpg'
+import Slider1 from 'public/assets/slider/slider1.jpg'
+import Slider2 from 'public/assets/slider/slider2.jpg'
+import Slider3 from 'public/assets/slider/slider3.jpg'
 
 var sliderSettings = {
 	arrow: true,
@@ -12,7 +12,7 @@ var sliderSettings = {
 	infinite: true,
 	speed: 500,
 	slidesToShow: 1,
-	slidesToScroll: 1,
+	slidesToScroll: 1
 }
 
 export default function LandingCarousel() {

@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid'
 
 import ContactWidgetCard from './components/ContactWidgetCard'
 
-import SeedLogoWhite from 'assets/logo/seed_logo_white.svg'
+import SeedLogoWhite from 'public/assets/logo/seed_logo_white.svg'
 
 export default function Footer() {
 	return (

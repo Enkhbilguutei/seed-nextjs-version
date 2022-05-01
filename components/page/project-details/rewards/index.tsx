@@ -11,7 +11,7 @@ export default function projectDetails() {
 		<Grid
 			item
 			xs={12}
-			sx={{ p: 3, backgroundColor: '#edf9f3', textAlign: 'left', my: 10 }}
+			sx={{ p: 3, backgroundColor: '#edf9f3', textAlign: 'left', mt: 2 }}
 		>
 			<Typography
 				variant="h4"

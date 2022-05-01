@@ -2,7 +2,7 @@ import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 
-import CTAImage from 'assets/cta/cta-widget.jpg'
+import CTAImage from 'public/assets/cta/cta-widget.jpg'
 
 export default function CTA() {
 	return (
