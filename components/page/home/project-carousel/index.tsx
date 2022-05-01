@@ -54,7 +54,7 @@ export default function ProjectCarousel() {
 		<Box sx={{ backgroundColor: '#001d23', py: 7, px: 5, marginTop: '-7px' }}>
 			<Slider {...sliderSettings}>
 				<ProjectItem
-					image={ProjectGrid1}
+					image={ProjectGrid1.src}
 					alt="Project Grid 1"
 					title="Яаралтай Тусламжийн Тасгийнхан МУОАК"
 					authorLink="http://seed.mn/"
@@ -62,7 +62,7 @@ export default function ProjectCarousel() {
 					href="http://seed.mn/"
 				/>
 				<ProjectItem
-					image={ProjectGrid2}
+					image={ProjectGrid2.src}
 					alt="Project Grid 2"
 					title="Big Life Lil Thug E ft (Desant, Fla, Ginjin ...)"
 					authorLink="http://seed.mn/"
@@ -70,7 +70,7 @@ export default function ProjectCarousel() {
 					href="http://seed.mn/"
 				/>
 				<ProjectItem
-					image={ProjectGrid3}
+					image={ProjectGrid3.src}
 					alt="Project Grid 3"
 					title="Халуун Маруужин цомог B Production"
 					authorLink="http://seed.mn/"
@@ -78,7 +78,7 @@ export default function ProjectCarousel() {
 					href="http://seed.mn/"
 				/>
 				<ProjectItem
-					image={ProjectGrid4}
+					image={ProjectGrid4.src}
 					alt="Project Grid 4"
 					title="LMAO"
 					authorLink="http://seed.mn/"
@@ -86,7 +86,7 @@ export default function ProjectCarousel() {
 					href="http://seed.mn/"
 				/>
 				<ProjectItem
-					image={ProjectGrid5}
+					image={ProjectGrid5.src}
 					alt="Project Grid 5"
 					title="Маш Нууц III: No Country For Old Men"
 					authorLink="http://seed.mn/"
@@ -94,7 +94,7 @@ export default function ProjectCarousel() {
 					href="http://seed.mn/"
 				/>
 				<ProjectItem
-					image={ProjectGrid6}
+					image={ProjectGrid6.src}
 					alt="Project Grid 6"
 					title="Ганц Бие Бүсгүйчүүд IV: Төгсгөл ба Эхлэл"
 					authorLink="http://seed.mn/"
