@@ -16,10 +16,10 @@ export default function Character() {
 				<Container>
 					<Grid container spacing={4}>
 						<Grid item xs={8} sx={{ textAlign: 'center' }}>
-							<img src={avatar[3].photoUrl} alt="" />
+							<img src={avatar[3].image} alt="" />
 							<div>
-								<h1>{avatar[3].name}</h1>
-								<p>Affiliation: {avatar[3].affiliation}</p>
+								<h1>{avatar[3].title}</h1>
+								<p>Affiliation: {avatar[3].title}</p>
 							</div>
 						</Grid>
 						<Grid item xs={4}>
@@ -55,7 +55,7 @@ export async function getStaticProps({ params }: any) {
 export async function getStaticPaths() {
 	return {
 		paths: avatar.map((avatar) => {
-			const blogId = avatar.name.toLowerCase().replace(/ /g, '-')
+			const blogId = avatar.title.toLowerCase().replace(/ /g, '-')
 			return {
 				params: {
 					blogId

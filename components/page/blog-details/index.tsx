@@ -1,22 +1,28 @@
+import CardMedia from '@mui/material/CardMedia'
+import { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { avatar } from './avatar'
 
 export default function blogInfos() {
 	return (
-		<ul
-			style={{
-				display: 'grid',
-				gridTemplateColumns: '1fr 1fr 1fr',
-				gridGap: '4em'
-			}}
-		>
-			{avatar.map((avatar) => {
+		<div>
+			{avatar.map((avatar: { _id: number; image: string; title: string }) => {
 				return (
-					<li key={avatar._id}>
-						<p>{avatar.name}</p>
-						<img src={avatar.photoUrl} width="100%" alt="" />
-					</li>
+					<div key={avatar._id}>
+						<p>{avatar.title}</p>
+						<CardMedia
+							sx={{
+								overflow: 'hidden',
+								height: '350px',
+								backgroundImage: `url('` + avatar.image + `')`,
+								backgroundAttachment: 'relative',
+								backgroundSize: 'cover',
+								backgroundPosition: 'center'
+							}}
+						/>
+					</div>
 				)
 			})}
-		</ul>
+		</div>
 	)
 }
