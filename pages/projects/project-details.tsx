@@ -1,3 +1,4 @@
+import React from 'react';
 import PageLayout from 'layout/page-layout'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
@@ -6,9 +7,16 @@ import FundingInfo from 'components/page/project-details/funding-Info'
 import MainDetails from 'components/page/project-details/Main-details'
 import Rewards from 'components/page/project-details/rewards'
 
-import ProjectDetailsHeader from '/assets/project/project-details.jpg'
+import ProjectDetailsHeader from 'public/assets/project/project-details.jpg'
 
 export default function projectDetails() {
+	const [height, setHeight] = React.useState<string>('1191px');
+
+	React.useEffect(() => {
+		let element = document.getElementById('project-details');
+		setHeight(element ? element.clientHeight.toString() + 'px' : '1193px');
+	}, [])
+
 	return (
 		<PageLayout>
 			<Container sx={{ my: 3 }}>
@@ -32,7 +40,7 @@ export default function projectDetails() {
 					<Grid
 						item
 						xs={4}
-						sx={{ maxHeight: '1191px', overflowY: 'scroll', mt: 5 }}
+						sx={{ maxHeight: height, overflowY: 'scroll', mt: 5 }}
 					>
 						<Rewards />
 						<Rewards />

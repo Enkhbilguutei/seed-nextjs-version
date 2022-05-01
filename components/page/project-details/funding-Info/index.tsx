@@ -8,7 +8,7 @@ import LinearProgress from '@mui/material/LinearProgress'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
 
-import Batamgalan from '/assets/author-thumbs/03.jpg'
+import Batamgalan from 'public/assets/author-thumbs/03.jpg'
 
 export default function projectDetails() {
 	return (

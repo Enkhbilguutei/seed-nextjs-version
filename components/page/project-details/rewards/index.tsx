@@ -1,7 +1,7 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
 import Image from 'next/image'
 
-import ProjectRewards from '/assets/project/project-rewards.jpg'
+import ProjectRewards from 'public/assets/project/project-rewards.jpg'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle'
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
