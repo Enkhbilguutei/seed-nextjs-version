@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { Projects } from 'api/project'
 
@@ -32,6 +33,9 @@ export default function ProjectID() {
 
 	return (
 		<PageLayout>
+			<Head>
+				<title>{projectData.title} | Seed.mn</title>
+			</Head>
 			<Container sx={{ mt: 3, mb: 10 }}>
 				<Grid
 					container

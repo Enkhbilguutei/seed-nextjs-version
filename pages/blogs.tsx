@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
@@ -12,6 +14,9 @@ import CTA from 'components/page/blogs/cta'
 export default function Blogs() {
 	return (
 		<PageLayout>
+			<Head>
+				<title>Блог - Seed.mn</title>
+			</Head>
 			<Box sx={{ backgroundColor: '#edf9f3', py: 8 }}>
 				<Container>
 					<Grid container spacing={4}>

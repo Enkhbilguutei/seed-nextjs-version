@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography'
 import AddIcon from '@mui/icons-material/Add'
 import DoneIcon from '@mui/icons-material/Done'
 
-// import AboutGalleryImage1 from 'assets/about/about-gallery-1.jpg'
 import AboutGalleryImage2 from 'public/assets/about/about-gallery-2.jpg'
 
 export default function Landing() {
@@ -96,7 +95,6 @@ export default function Landing() {
 				</Grid>
 				<Grid item xs={7} sx={{ pl: 5 }}>
 					<Image src={AboutGalleryImage2} className="rounded-corner" />
-					{/* <Image src={AboutGalleryImage1} className="rounded-image about-us-image-left" /> */}
 				</Grid>
 			</Grid>
 		</Container>

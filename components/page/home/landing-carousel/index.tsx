@@ -20,13 +20,28 @@ export default function LandingCarousel() {
 		<Box>
 			<Slider {...sliderSettings}>
 				<div>
-					<Image src={Slider1} alt="Slider 1"></Image>
+					<Image
+						src={Slider1.src}
+						width="1900"
+						height="580"
+						alt="Slider 1"
+					></Image>
 				</div>
 				<div>
-					<Image src={Slider2} alt="Slider 2"></Image>
+					<Image
+						src={Slider2.src}
+						width="1900"
+						height="580"
+						alt="Slider 2"
+					></Image>
 				</div>
 				<div>
-					<Image src={Slider3} alt="Slider 3"></Image>
+					<Image
+						src={Slider3.src}
+						width="1900"
+						height="580"
+						alt="Slider 3"
+					></Image>
 				</div>
 			</Slider>
 		</Box>
