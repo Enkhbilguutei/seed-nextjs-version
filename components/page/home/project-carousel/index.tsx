@@ -1,6 +1,8 @@
 import Slider from 'react-slick'
 import Box from '@mui/material/Box'
 
+import Projects from 'api/project'
+
 import ProjectGrid1 from 'public/assets/project/project-grid-01.jpg'
 import ProjectGrid2 from 'public/assets/project/project-grid-02.jpg'
 import ProjectGrid3 from 'public/assets/project/project-grid-03.jpg'
@@ -53,54 +55,26 @@ export default function ProjectCarousel() {
 	return (
 		<Box sx={{ backgroundColor: '#001d23', py: 7, px: 5, marginTop: '-7px' }}>
 			<Slider {...sliderSettings}>
-				<ProjectItem
-					image={ProjectGrid1.src}
-					alt="Project Grid 1"
-					title="Яаралтай Тусламжийн Тасгийнхан МУОАК"
-					authorLink="http://seed.mn/"
-					author="EKU"
-					href="http://seed.mn/"
-				/>
-				<ProjectItem
-					image={ProjectGrid2.src}
-					alt="Project Grid 2"
-					title="Big Life Lil Thug E ft (Desant, Fla, Ginjin ...)"
-					authorLink="http://seed.mn/"
-					author="EKU"
-					href="http://seed.mn/"
-				/>
-				<ProjectItem
-					image={ProjectGrid3.src}
-					alt="Project Grid 3"
-					title="Халуун Маруужин цомог B Production"
-					authorLink="http://seed.mn/"
-					author="EKU"
-					href="http://seed.mn/"
-				/>
-				<ProjectItem
-					image={ProjectGrid4.src}
-					alt="Project Grid 4"
-					title="LMAO"
-					authorLink="http://seed.mn/"
-					author="EKU"
-					href="http://seed.mn/"
-				/>
-				<ProjectItem
-					image={ProjectGrid5.src}
-					alt="Project Grid 5"
-					title="Маш Нууц III: No Country For Old Men"
-					authorLink="http://seed.mn/"
-					author="EKU"
-					href="http://seed.mn/"
-				/>
-				<ProjectItem
-					image={ProjectGrid6.src}
-					alt="Project Grid 6"
-					title="Ганц Бие Бүсгүйчүүд IV: Төгсгөл ба Эхлэл"
-					authorLink="http://seed.mn/"
-					author="EKU"
-					href="http://seed.mn/"
-				/>
+				{Projects.map((Projects, index) => {
+					if (index + 1 <= 10) {
+						return (
+							<ProjectItem
+								key={index + 1}
+								title={Projects.title}
+								category={Projects.category}
+								author={Projects.author}
+								authorImg={Projects.authorImg}
+								authorLink={'/users/' + Projects.userId}
+								image={Projects.image}
+								alt={Projects.title}
+								href={'/projects/' + Projects._id}
+								date={Projects.date}
+								needed={Projects.needed}
+								collected={Projects.collected}
+							/>
+						)
+					}
+				})}
 			</Slider>
 		</Box>
 	)

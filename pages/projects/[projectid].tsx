@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { Projects } from 'api/project'
+import Projects from 'api/project'
 
 import PageLayout from 'layout/page-layout'
 import { Typography } from '@mui/material'

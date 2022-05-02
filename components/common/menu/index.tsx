@@ -94,7 +94,7 @@ export default function Menu() {
 					<Grid item xs={3} sx={{ textAlign: 'right' }}>
 						<Button
 							sx={{ dislay: 'block' }}
-							href="/login"
+							href="/auth/login"
 							color="primary"
 							variant="outlined"
 						>

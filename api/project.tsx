@@ -1,4 +1,4 @@
-export const Projects = [
+const Projects = [
 	{
 		_id: '01',
 		image: 'assets/project/project-grid-15.jpg',
@@ -681,3 +681,5 @@ export const Projects = [
 		story3: ''
 	}
 ]
+
+export default Projects

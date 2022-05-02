@@ -51,17 +51,17 @@ export default function LoginForm() {
 						margin="normal"
 					></TextField>
 					<Typography variant="caption" color="#2752ff" align="right">
-						<Link href="/forgot">
+						<Link href="/auth/forgot">
 							<a>Нууц үг сэргээх</a>
 						</Link>
 					</Typography>
 					<Typography variant="caption" color="#2752ff" align="right">
-						<Link href="/register">
+						<Link href="/auth/register">
 							<a>Шинээр бүртгүүлэх</a>
 						</Link>
 					</Typography>
 					<Button
-						href="/loggedin"
+						href="/auth/loggedin"
 						variant="contained"
 						size="medium"
 						sx={{ width: '100%', my: 1 }}

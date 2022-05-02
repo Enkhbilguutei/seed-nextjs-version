@@ -7,7 +7,7 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess'
 
 import ProjectItem from 'components/common/project-item'
 
-import { Projects } from 'api/project'
+import Projects from 'api/project'
 
 export default function ProjectList() {
 	const [totalProjects, changeTotalProjects] = React.useState<number>(9)
