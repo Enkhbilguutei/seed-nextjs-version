@@ -52,10 +52,7 @@ export default function AboutUs() {
 							</Typography>
 							<Grid container alignItems="center">
 								<Grid item>
-									<Avatar
-										alt="Munkhtulga CEO"
-										src="/assets/author-thumbs/02.jpg"
-									/>
+									<Avatar alt="Munkhtulga CEO" src={MunkhtulgaImage.src} />
 								</Grid>
 								<Grid item sx={{ ml: 3 }}>
 									<Typography variant="h6">О.Мөнхтулга</Typography>
